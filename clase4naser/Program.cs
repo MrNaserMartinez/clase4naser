@@ -33,7 +33,14 @@ do
 Console.WriteLine($"La suma de los números ingresados es: {suma}");
 
 
-
-
-
-
+Console.WriteLine("El primer numero entero positivo divisible entre 7 y 11/n");
+int n = 1;
+while (true)
+{
+    if (n % 7 == 0 && n % 11 == 0)
+    {
+        Console.WriteLine($"El primer número entero positivo divisible entre 7 y 11 es: {n}");
+        break;
+    }
+    n++;
+}
