@@ -33,7 +33,6 @@ do
 Console.WriteLine($"La suma de los números ingresados es: {suma}");
 
 
-Console.WriteLine("El primer numero entero positivo divisible entre 7 y 11/n");
 int n = 1;
 while (true)
 {
@@ -56,3 +55,27 @@ do
     ingresoUsuario = Console.ReadLine();
 }while(ingresoUsuario != contra );
 Console.WriteLine("CONTRA CORRECTA");
+
+Console.WriteLine("EL RANDOM");
+Random rnd = new Random();
+int numeroAleatorio = rnd.Next(1, 101);
+int intento;
+
+Console.WriteLine("¡Adivina el número entre 1 y 100!");
+
+do
+{
+    Console.Write("Introduce tu intento: ");
+    intento = int.Parse(Console.ReadLine());
+
+    if (intento < numeroAleatorio)
+    {
+        Console.WriteLine("El número es mayor.");
+    }
+    else if (intento > numeroAleatorio)
+    {
+        Console.WriteLine("El número es menor.");
+    }
+} while (intento != numeroAleatorio);
+
+Console.WriteLine("¡Felicidades! ¡Has adivinado el número " + numeroAleatorio + "!"); //Este es el 2do del tercer enunciado
