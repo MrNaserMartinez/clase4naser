@@ -44,3 +44,15 @@ while (true)
     }
     n++;
 }
+
+Console.WriteLine("ENUNCIADO #3 /n");
+Console.WriteLine("En busca de la contrasenia");
+string contra = "jutiapa";
+string ingresoUsuario;
+
+do
+{
+    Console.WriteLine("Ingrese la contra");
+    ingresoUsuario = Console.ReadLine();
+}while(ingresoUsuario != contra );
+Console.WriteLine("CONTRA CORRECTA");
